@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>task3</title>
 <style>
     *{
@@ -10,15 +10,17 @@
         margin:0;
     }
     #main{
-        width:60%;
+        width:40%;
         margin:0 auto;
+        max-width:640px;
+        min-width:320px;
 
     }
     #header{
         width:100%;
         background-color:#22292C;
         position:relative;
-        padding:1% 0 10%;
+        padding:1% 0 5%;
     }
     #back{
         width:8%;
@@ -26,15 +28,19 @@
         margin-bottom:1%;
         float:left;
     }
-    #back a img{
-        width:100%;
-        max-width:20px;
-        float:left;
+    .back{background:url(images/header1.png)0 0 no-repeat scroll transparent;
+        background-size:50% 50%;
+        padding:3%;
+        position:absolute;
+        top:40%;
+        left:4%;
     }
-    #back a p{
-        color:#ffffff;
-        font-size:1.8em;
-        float:right;
+   .back-text{
+       color: #fcfffa;
+       font-size:1.8em;
+       position:absolute;
+       top:20%;
+       left:10%;
     }
     #tittle{
         margin-left:30%;
@@ -43,72 +49,90 @@
         float:left;
     }
     #more{
-
-        margin-right:5%;
-        float:right;
+        background:url(images/header2.png)0 0 no-repeat scroll transparent;
+        background-size:50% 50%;
+        padding:5%;
+        position:absolute;
+        top:10%;
+        right:5%;
     }
     #content{
         background-color:#68CDD5;
-        padding:30% 0;
+        padding:54% 0;
         width:100%;
         float:left;
         position:relative;
     }
     .back-image{
-        margin:0 0 0 1%;
-        position :absolute;
-        top:2%;
+        background:url(images/back.png)0 0 no-repeat scroll transparent;
+        background-size:40% 40%;
+        padding:10%;
+        position:absolute;
+        top:5%;
+        left:5%;
     }
     #logo{
-        width:252px;
-        margin:0 auto;
+        background:url(images/logo.png)0 0 no-repeat scroll transparent;
+        background-size:100% 100%;
+        padding:5% 10%;
         position:absolute;
-        top:10%;
-        right:40%;
+        top:20%;
+        left:36%;
     }
     #text{
         color: #ffffff;
         font-size:2.1em;
         width:52%;
         position:absolute;
-        top:30%;
-        right:20%;
+        top:40%;
+        right:25%;
         text-align:left;
     }
     #left-img{
         color:#ffffff;
+        background:url(images/left.png)0 0 no-repeat scroll transparent;
+        background-size:40% 40%;
+        padding:10%;
         position:absolute;
         top:70%;
-        left:20%;
+        left:30%;
         font-size:2.1em;
-        text-align:center;
     }
     #right-img{
         color:#ffffff;
+        background:url(images/right.png)0 0 no-repeat scroll transparent;
+        background-size:40% 40%;
+        padding:10%;
         position:absolute;
         top:70%;
-        right:20%;
+        left:60%;
         font-size:2.1em;
-        text-align:center;
     }
+    #left-img p,#right-img p{
+        position: absolute;
+        left:-6%;
+        top:40%;
+    }
+
 </style>
 </head>
 <body>
     <div id="main">
         <div id="header">
             <div id="back">
-                <a><img src="images/header1.png"></a>
-                <a><p>返回</p></a>
+                <a class="back"></a>
+
             </div>
+            <a class="back-text">返回</a>
             <div id="tittle">魔镜</div>
-            <div id="more"><img src="images/header2.png"></div>
+            <div id="more"></div>
         </div>
         <div id="content">
-            <div class="back-image"><img src="images/back.png"></div>
-            <div id="logo"><img src="images/logo.png"></div>
+            <div class="back-image"></div>
+            <div id="logo"></div>
             <div id="text"><p>葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具。</p></div>
-            <div id="left-img"><img src="images/left.png"/><p>290560933</p></div>
-            <div id="right-img"><img src="images/right.png"/><p>BJPTTeng</p></div>
+            <div id="left-img"><p>290560933</p></div>
+            <div id="right-img"><p>BJPTTeng</p></div>
         </div>
     </div>
 </body>
